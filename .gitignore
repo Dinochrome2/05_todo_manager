@@ -1,0 +1,4 @@
+backend/.idea/.gitignore
+backend/app/__pycache__/
+backend/app/.tasks.db
+frontend/node_modules/
