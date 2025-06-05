@@ -9,7 +9,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-# Этап деплоя: отдача статики через caddy
+# Этап запуска через caddy
 FROM caddy:2-alpine
 
 COPY --from=builder /app/dist /usr/share/caddy
