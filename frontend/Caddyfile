@@ -1,13 +1,16 @@
 dinochrome1.ru {
-    root * /usr/share/caddy
-    file_server
-    try_files {path} /index.html
-
     handle_path /api/* {
         reverse_proxy backend:8000
     }
+
+    root * /usr/share/caddy
+    file_server
+    try_files {path} /index.html
 }
 
 api.dinochrome1.ru {
     reverse_proxy backend:8000
 }
+
+
+
