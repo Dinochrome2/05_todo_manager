@@ -1,3 +1,7 @@
+{
+    acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
 dinochrome1.ru {
     handle_path /api/* {
         reverse_proxy backend:8000
@@ -11,6 +15,3 @@ dinochrome1.ru {
 api.dinochrome1.ru {
     reverse_proxy backend:8000
 }
-
-
-
